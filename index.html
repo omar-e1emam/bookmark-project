@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <header class="container mt-5">
+      <form
+        id="bookmarkForm"
+        class="d-flex justify-content-center align-items-center flex-column p-3 py-4"
+      >
+        <h1 class="position-relative">Bookmaker</h1>
+        <div class="content w-100 mt-5 p-4">
+          <h2 class="head text-center">
+            <i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i
+              class="fa-solid fa-bookmark"
+            ></i>
+          </h2>
+          <div class="site-name fw-semibold flex-column d-flex">
+            <label for="name"
+              ><i class="fa-solid fa-book-bookmark"></i> Site Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="form-control mt-2 fw-semibold"
+              placeholder="Bookmark Name"
+              required
+            />
+          </div>
+          <div class="site-url fw-semibold flex-column d-flex mt-2">
+            <label for="url"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input
+              type="url"
+              id="url"
+              class="form-control mt-2 fw-semibold"
+              placeholder="Website URL"
+              required
+            />
+          </div>
+          <button class="btn btn-danger mt-4" type="submit">Submit</button>
+        </div>
+      </form>
+      <table id="bookmarkTable" class="table mt-4 text-center bg-light">
+        <thead>
+          <tr>
+            <th class="text-capitalize">Index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </header>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
